@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* NAV */
+
+.main-nav {
+    
+    background: linear-gradient(to bottom, #003366 0%, #336699 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: "Indie Flower", cursive;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 2em;
+}
+.nav-list li {
+    padding: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.push {
+    margin-left: auto;
+}
+
+
+/* COVER */
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343C63;
+    height: 60vh;
+}
+
+.cover-picture {
+
+    width: 500px;
+
+}
+
+
+/* GRID */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    background-color: #A67BB0;
+}
+
+.box {
+    background-color: #444;
+    border: solid 2px #96BAD4;
+    padding: 20px;
+    margin: 20px;
+    transition: all 1s;
+
+}
+
+.box > img {
+    width: 100%;
+    
+}
+
+.box:hover {
+
+    transform: scale(1.1);
+
+}
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    background: linear-gradient(to bottom, #003366 0%, #336699 100%);
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-size: 2em;
+    width: 100%;
+}
